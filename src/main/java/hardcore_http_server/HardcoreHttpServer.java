@@ -1,3 +1,5 @@
+package hardcore_http_server;
+
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
@@ -24,7 +26,7 @@ class Server {
 
     private final static String HEADERS =
             "HTTP/1/1 200 OK\n" +
-                    "Server: fedserver\n" +
+                    "hardcore_http_server.Server: fedserver\n" +
                     "Content-Type: text/html\n" +
                     "Content-Length: %s\n" +
                     "Connection: close\n\n";
